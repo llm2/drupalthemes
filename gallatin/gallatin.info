@@ -1,0 +1,7 @@
+name = Gallatin 
+version = 0.1
+core = 7.x
+base theme = bootstrap 
+stylesheets[all][] = style.css
+settings[toggle_main_menu] = 0
+settings[toggle_secondary_menu] = 0
