@@ -176,14 +176,6 @@ if($logged_in){
 
   </div>
 </div>
-<script>
-    $(function () {
-      $(document).on('click', '.yamm .dropdown-menu', function (e) {
-        e.stopPropagation()
-      })
-    })
-  </script>
-<script>         
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">
     <?php print render($page['footer']); ?>
