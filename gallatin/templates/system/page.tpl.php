@@ -166,7 +166,7 @@ if($logged_in){
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
-    </section>
+    </div>
 
     <?php if (!empty($page['sidebar_second'])): ?>
       <aside class="col-sm-3" role="complementary">
@@ -174,7 +174,7 @@ if($logged_in){
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
 
-  </div>
+  </section>
 </div>
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">

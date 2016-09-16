@@ -24,11 +24,11 @@ DEVELOPER MIXINS
 FORM STYLES
 #######################################################################################*/
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="password"], select,
-textarea {
+.webform-component input[type="text"],
+.webform-component input[type="email"],
+.webform-component input[type="tel"],
+.webform-component input[type="password"], .main-content select,
+.webform-component textarea {
   width: 100%;
   padding: 12px;
   border: solid 1px #cccccc;
@@ -38,6 +38,7 @@ textarea {
   background: #fff;
   font-size: 16px;
  /* line-height: 16px;*/
+  height: 43px;
 }
 
 
@@ -785,6 +786,7 @@ DROP DOWN NAV
 
 .navbar .container {
   padding-right: 0;
+  height: 85px;
 }
 
 .navbar-default {
