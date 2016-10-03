@@ -41,14 +41,35 @@ FORM STYLES
   height: 43px;
 }
 
-
+.webform-component{
+ width: 50%;
+ padding-left: 10px;
+ padding-right: 10px;
+ float: left;
+}
+.webform-component-textarea{
+ width: 100%
+}
+.webform-component-checkboxes{
+ width: 100%
+}
+/*
+.webform-component-textfield 
+{
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #fff;
+  float: left;
+}
+*/
 .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"], .radio-inline input[type="radio"] {
     margin-left: 5px;
     position: relative;
     display: inline;
 }
 
-/*input[type="radio"],
+input[type="radio"],
 input[type="checkbox"] {
   margin-left: 5px;
   position: relative;
@@ -5577,7 +5598,15 @@ ul.nav ul.dropdown-menu li .yamm-content .row .panel-heading a:hover {
 }*/
 
 @media screen and (max-width: 979px) {
+.navbar-nav .open .dropdown-menu{
+  position: static;
+  float: none;
+  width: auto;
+}
 
+ul.nav ul.dropdown-menu {
+  box-shadow: 0;
+}
   ul.nav li.dropdown {
     z-index: auto;
   }

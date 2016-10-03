@@ -95,7 +95,6 @@
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
-  <?php echo(file_get_contents('mainnav.php.tpl')); ?>
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
