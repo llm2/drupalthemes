@@ -27,7 +27,7 @@ FORM STYLES
 .webform-component input[type="text"],
 .webform-component input[type="email"],
 .webform-component input[type="tel"],
-.webform-component input[type="password"], .main-content select,
+.webform-component input[type="password"], .webform-component select,
 .webform-component textarea {
   width: 100%;
   padding: 12px;
@@ -3363,6 +3363,9 @@ input[type="button"], input[type="submit"] {
   float: left;
 }
 
+section.col-sm-9 {
+  padding: 0;
+}
 .section p{
   padding-right: 10px;
 }

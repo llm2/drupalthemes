@@ -146,6 +146,7 @@ if($logged_in){
 	</div>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
+<?php if (! $logged_in): ?>
 <div class="breadcrumbs">
         <div class="main">
 				<a href="http://gallatin.nyu.edu">Home</a>			
@@ -155,6 +156,7 @@ if($logged_in){
 					/											
 							<?php print $title; ?>	   
 </div></div>	
+<?php endif; ?>
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
