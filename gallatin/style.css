@@ -41,6 +41,10 @@ FORM STYLES
   height: 43px;
 }
 
+fieldset{
+width: 100%;
+}
+
 .webform-component{
  width: 50%;
  padding-left: 10px;
