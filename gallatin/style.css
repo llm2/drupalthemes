@@ -41,6 +41,10 @@ FORM STYLES
   height: 43px;
 }
 
+fieldset{
+width: 100%;
+}
+
 .webform-component{
  width: 50%;
  padding-left: 10px;
@@ -3285,14 +3289,14 @@ input[type="button"], input[type="submit"] {
     display: block;
 }
 
-.main .parsys ul, .checklist ul {
+.node-webform ul, .checklist ul {
   list-style-type: none;
 }
 
-.main .parsys  ul li {
+.node-webform  ul li {
 }
 
-.main .parsys ul li:before {
+.node-webform ul li:before {
   color: #b51111;
   content: '\f0c8';
   font-family: FontAwesome; 
@@ -3318,23 +3322,27 @@ input[type="button"], input[type="submit"] {
   width: 100%;
 
 }
-.webform-client-form .fullSize{
+.webform-client-form .fullSize,
+.webform-component-markup{
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
   float:left;
 }
-.webform-client-form .halfSize, .month{
+.webform-client-form .halfSize, .webform-client-form .month{
   width: 50%;
       padding-left: 10px;
   padding-right: 10px;
   float:left;
 }
-.webform-client-form .quarterSize, .day, .year, .hour,.minute{
+.webform-client-form .quarterSize, .webform-client-form .day, .webform-client-form .year, .webform-client-form .hour,.webform-client-form .minute{
   width: 25%;
       padding-left: 10px;
   padding-right: 10px;
   float:left;
+}
+.webform-component-time{
+	min-height: 100px; /* because often with date component that is taller */
 }
 .webform-client-form .eighthSize{
   width: 12.5%;
