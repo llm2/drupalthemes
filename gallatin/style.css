@@ -41,10 +41,6 @@ FORM STYLES
   height: 43px;
 }
 
-fieldset{
-width: 100%;
-}
-
 .webform-component{
  width: 50%;
  padding-left: 10px;
@@ -3328,20 +3324,17 @@ input[type="button"], input[type="submit"] {
   padding-right: 10px;
   float:left;
 }
-.webform-client-form .halfSize, .webform-client-form .month{
+.webform-client-form .halfSize, .month{
   width: 50%;
       padding-left: 10px;
   padding-right: 10px;
   float:left;
 }
-.webform-client-form .quarterSize, .webform-client-form .day, .webform-client-form .year, .webform-client-form .hour,.webform-client-form .minute{
+.webform-client-form .quarterSize, .day, .year, .hour,.minute{
   width: 25%;
       padding-left: 10px;
   padding-right: 10px;
   float:left;
-}
-.webform-component-time{
-	min-height: 100px; /* because often with date component that is taller */
 }
 .webform-client-form .eighthSize{
   width: 12.5%;
