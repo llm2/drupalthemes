@@ -127,6 +127,12 @@ textarea.large {
   min-width: 440px;
   width: 440px;
 }
+/*.node-type-webform-report .main .region-content{
+ max-width: none;
+}*/
+.table-responsive{
+     overflow-x: visible
+}
 /* CUSTOM CHECKBOX STYLES
  ---------------------------------------------------------------*/
 
@@ -3304,8 +3310,10 @@ input[type="button"], input[type="submit"] {
   display: inline-block;
   width: 1.5em; /* same as padding-left set on li */
   margin-left: -1.5em; /* same as padding-left set on li */
-}​
-
+}
+.node-webform a{
+	text-decoration: underline;
+}
 
 /* ------------------------- FORMS ------------------------------------- */
 /* replicate columns with old markup for forms */
