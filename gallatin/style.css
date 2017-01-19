@@ -27,6 +27,7 @@ FORM STYLES
 .webform-component input[type="text"],
 .webform-component input[type="email"],
 .webform-component input[type="tel"],
+.webform-component input[type="file"],
 .webform-component input[type="password"], .webform-component select,
 .webform-component textarea {
   width: 100%;
@@ -51,9 +52,11 @@ width: 100%;
  padding-right: 10px;
  float: left;
 }
-.webform-component-textarea{
- width: 100%
+.webform-component input[type="file"]{
+ margin-bottom: 20px;
 }
+.webform-component-textarea,
+.webform-component-markup,
 .webform-component-checkboxes{
  width: 100%
 }
