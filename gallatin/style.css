@@ -5739,3 +5739,11 @@ visibility:hidden;
 display:none;
 visibility:hidden;
 }
+
+/* fieldset */
+  fieldset .panel-title {
+    color: #b51111;
+    padding: 10px 0 10px 0;
+    margin-left: -10px;
+    margin-right: -30px;
+  }
