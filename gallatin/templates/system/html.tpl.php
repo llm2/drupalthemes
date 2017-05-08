@@ -68,28 +68,29 @@
   <![endif]-->
   <?php print $scripts; ?>
  <!-- JS FOR GLOBAL NAV -->
-    <link rel="stylesheet" href="//s3.amazonaws.com/nyu.edu/globalnav/global-nav.css">
-    <script src="//s3.amazonaws.com/nyu.edu/globalnav/global-nav.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function(event) {
-          globalNavObject.init({
-            logoPathDesktop: '//s3.amazonaws.com/nyu.edu/logos/gallatin.svg',
-            logoPathMobile: '//s3.amazonaws.com/nyu.edu/logos/gallatin-small.svg',
-            logoAlt: 'NYU Gallatin School of Individualized Study',
-            searchDomain: '//gallatin.nyu.edu/utilities/search.html',
-            searchFormMethod: 'GET',
-            searchInputName: 'q',
-            searchPlaceholder: 'SEARCH GALLATIN',
-            searchEnabled: true,
-            breakPoints: {
-              desktop: 992,
-              tablet: 480,
-              phone: 290
-            },
-            isResponsive: true
-          });
-      });
-    </script>
+<link rel="stylesheet" href="//globalnav.digicomm.home.nyu.edu/v1.0.6/global-nav.css">
+<script src="//globalnav.digicomm.home.nyu.edu/v1.0.6/global-nav.js"></script>
+<script type="text/javascript">globalNavObject || document.write("<script type='text/javascript' src='//nyu.edu/beta/nav/v1.0.6/global-nav.js'>\x3C/script>")</script>
+<script>
+   document.addEventListener('DOMContentLoaded', function(event) {
+     globalNavObject.init({
+       homepage: '//gallatin.nyu.edu',
+               logoPathDesktop: '//s3.amazonaws.com/nyu.edu/logos/gallatin.svg',
+               logoPathMobile: '//s3.amazonaws.com/nyu.edu/logos/gallatin-small.svg',
+               logoAlt: 'NYU Gallatin School of Individualized Study',
+               searchDomain: '//gallatin.nyu.edu/utilities/search.html',
+               searchFormMethod: 'GET',
+               searchInputName: 'q',
+               searchPlaceholder: 'SEARCH GALLATIN',
+               searchEnabled: true,
+               breakPoints: {
+                  desktop: 992,
+                  tablet: 480,
+                  phone: 290 },
+               isResponsive: true
+            });
+   });
+</script>
 </head>
 <body<?php print $body_attributes; ?>>
   <div id="skip-link">
