@@ -28,6 +28,9 @@ h6 {
   padding-bottom: 20px;
   margin: 0;
   font-family: "Playfair Display", handwriting;
+    width: 100%;
+     float:left;
+   clear:left;
 }
 /*#####################################################################################
 MAIN CONTENT STYLES - STRUCTURE
@@ -98,6 +101,22 @@ a, a:hover {
     border: 1px solid #ccc; 
     text-align: left; 
   }
+
+.form-item label{
+  font-weight:bold;
+}
+.form-item{
+ padding-bottom: 20px;
+}
+div .quarterSize{
+  width: 25%;
+}
+div .halfSize{
+  width: 50%;
+}
+div .fullSize{
+    width: 100%;
+}
 
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
 
