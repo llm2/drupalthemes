@@ -2407,6 +2407,9 @@ DEVELOPER DEVICE MEDIA QUERIES
 }
 
 @media screen and (min-width: 992px) {
+	.region-footer .yamm .container{
+		display: none;
+	}
    .navbar-default .navbar-nav>li {
     margin-right: 15.1px;
   }
