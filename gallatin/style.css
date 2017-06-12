@@ -5751,3 +5751,30 @@ visibility:hidden;
     margin-left: -10px;
     margin-right: -30px;
   }
+
+  /* ------------------------ TABLES ----------------------- */
+table.standard {
+  border: 1px solid #bfbfbf;
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+  float:left;
+  margin-bottom: 40px;
+}
+table.standard thead,
+table.standard .mainColumn {
+  background-color: #cccccc !important;
+}
+table.standard .stripe {
+  background-color: #e5e5e5;
+}
+table.standard tr {
+  border-bottom: 1px solid #bfbfbf;
+}
+table.standard tr td, th{
+    padding: 6px 8px;
+    text-align: left;
+}
+table a{
+  text-decoration: underline;
+}
