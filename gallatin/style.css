@@ -3395,7 +3395,6 @@ section.col-sm-9 {
 .webform-client-form h1, .webform-client-form h2, .webform-client-form h3, .webform-client-form h4, .webform-client-form h5, .webform-client-form h6{
   width: 100%;
   padding-top: 20px;
-  padding-left: 10px;
   float:left;
 }
 .webform-client-form .checkbox input[type="checkbox"] {
@@ -3413,6 +3412,14 @@ section.col-sm-9 {
 .webform-client-form .checkbox span label{
   margin-top:0px;
     margin-left: 20px;
+}
+.webform-client-form fieldset legend{
+	width: 100%;
+	padding-top: 20px;
+	float:left;
+	border: none;
+	font-family: "Playfair Display", handwriting;
+	font-size:28px;
 }
 
 /* --------------------------- FORMS DB ------------------------------------ */
