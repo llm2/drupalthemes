@@ -29,7 +29,7 @@ FORM STYLES
 .webform-component input[type="tel"],
 .webform-component input[type="file"],
 .webform-component input[type="password"], .webform-component select,
-.webform-component textarea {
+{
   width: 100%;
   padding: 12px;
   border: solid 1px #cccccc;
@@ -40,6 +40,17 @@ FORM STYLES
   font-size: 16px;
  /* line-height: 16px;*/
   height: 43px;
+}
+.webform-component textarea {
+  width: 100%;
+  padding: 12px;
+  border: solid 1px #cccccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 16px;
+  height: auto;
 }
 
 fieldset{
