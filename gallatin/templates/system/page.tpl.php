@@ -147,7 +147,7 @@ if($logged_in){
       <?php endif; ?>
       <?php print render($title_suffix); ?>
 <?php if (! $logged_in): ?>
-<div class="breadcrumbs">
+<div class="breadcrumbs" tabindex="0" role="navigation" aria-label="breadcrumbs">
         <div class="main">
 				<a href="http://gallatin.nyu.edu">Home</a>			
 					/					
@@ -167,7 +167,9 @@ if($logged_in){
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+	<div id="skipToContent" role="main">
       <?php print render($page['content']); ?>
+	</div>
     </div>
 
     <?php if (!empty($page['sidebar_second'])): ?>

@@ -34,7 +34,9 @@
 
   // Print out the main part of the form.
   // Feel free to break this up and move the pieces within the array.
+  print '<div aria-label="request-form">';
   print drupal_render($form['submitted']);
+  print '</div>';
 
   // Always print out the entire $form. This renders the remaining pieces of the
   // form that haven't yet been rendered above (buttons, hidden elements, etc).

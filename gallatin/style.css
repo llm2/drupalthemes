@@ -28,8 +28,7 @@ FORM STYLES
 .webform-component input[type="email"],
 .webform-component input[type="tel"],
 .webform-component input[type="file"],
-.webform-component input[type="password"], .webform-component select,
-{
+.webform-component input[type="password"], .webform-component select {
   width: 100%;
   padding: 12px;
   border: solid 1px #cccccc;
@@ -52,7 +51,6 @@ FORM STYLES
   font-size: 16px;
   height: auto;
 }
-
 fieldset{
 width: 100%;
 }
