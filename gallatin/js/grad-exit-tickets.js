@@ -36,9 +36,9 @@ $(document).ready(function () {
         console.log("get cookie:" + user);
 
         if (user != "") {
-            $("#webform-client-form-24").show();
+            $("#webform-client-form-25").show();
         } else {
-            $("#webform-client-form-24").replaceWith("<hr/><H1>You must complete the <a href=\"http://gallatin.nyu.edu/en/utilities/forms/senior_exit.html\">Exit Survey</a> before requesting graduation tickets.</H1><hr/>");
+            $("#webform-client-form-25").replaceWith("<hr/><H1>You must complete the <a href=\"http://gallatin.nyu.edu/en/utilities/forms/senior_exit.html\">Exit Survey</a> before requesting graduation tickets.</H1><hr/>");
         }
     }
 

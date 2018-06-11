@@ -1,5 +1,5 @@
 name = Gallatin 
-version = 0.1
+version = 1.0 
 core = 7.x
 base theme = bootstrap 
 stylesheets[all][] = style.css
