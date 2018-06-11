@@ -3,5 +3,6 @@ version = 1.0
 core = 7.x
 base theme = bootstrap 
 stylesheets[all][] = style.css
+stylesheets[all][] = css/nav.css
 settings[toggle_main_menu] = 0
 settings[toggle_secondary_menu] = 0

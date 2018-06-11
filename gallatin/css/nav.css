@@ -1,0 +1,323 @@
+/* mega menu list */
+
+.nav-menu {
+  display: block;
+  position: relative;
+  list-style: none;
+ /* margin: 0;*/
+  z-index: 15;
+  margin: 25px 0 0 0;*/
+}
+.nav-menu ul, li {
+  margin-left: 0; 
+  padding-left: 0;
+}
+
+/* a top level navigation item in the mega menu */
+.nav-item {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+  #GN-local-nav .nav-item .icon {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  background-color: #b51111;
+}
+  #GN-local-nav .nav-item .icon:before {
+  content: '+';
+}
+  #GN-local-nav .nav-item .icon.icon--open:before {
+  content: '-';
+}
+
+
+/* first descendant link within a top level navigation item */
+.nav-item > a {
+
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000;
+  line-height: 20px;
+  outline: none;
+  text-decoration: none;
+  padding: 15px 27px 15px 27px;
+  display: block;
+
+}
+
+/*.nav-menu > li:nth-last-child(-n+2) {
+    text-transform: capitalize;
+}*/
+
+
+
+/* focus/open states of first descendant link within a top level
+       navigation item */
+.nav-item > a:focus,
+.nav-item > a.hover,
+.nav-item > a:hover,
+.nav-item > a.open {
+  background-color: #b51111;
+  color: #fff;
+}
+.nav-item.hover{
+    background-color: #b51111;
+}
+
+/* open state of first descendant link within a top level navigation item */
+.nav-item > a.open {
+  border-bottom: none;
+  z-index: 1;
+}
+
+
+/* sub-navigation panel */
+
+.sub-nav{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #b51111;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 8px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 2px 8px 5px rgba(0,0,0,0.4);
+  box-shadow: 0px 2px 8px 5px rgba(0,0,0,0.4);
+  z-index: -1;
+  padding: 0 0 0 30px;
+
+}
+
+.sub-nav-title{
+  padding-left: 7px; 
+}
+.sub-nav-category{
+  color: #fff;
+  font-family: "Raleway", arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  border-right: 2px solid #660000;
+  margin-right: 0px;
+  padding-top: 20px;
+  padding: 20px 30px;
+  margin-right: 0px;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sub-nav div.sub-nav-category:last-of-type{
+  border-right: 0;
+}
+
+
+/* sub-navigation panel open state */
+.sub-nav.open {
+  display: block;
+  max-height: 5000px;
+}
+
+/* list of items within sub-navigation panel */
+.sub-nav ul {
+  margin-left: 0; 
+  padding-left: 0;
+}
+
+
+/* list item within sub-navigation panel */
+.sub-nav li {
+
+  color: #fff;
+  font-family: "Raleway", arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 7px 7px 0;
+  letter-spacing: 1px;
+  line-height: 18px;
+  display: block;
+  width: 100%;
+  clear: both;
+  text-align: left;
+  list-style: none;
+}
+.sub-nav li a{
+  color:#fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 7px 7px 7px 7px;
+}
+.sub-nav li a:hover{
+  text-decoration: underline;
+}
+
+#nav-toggle {
+  background-color: #b51111;
+  display: none;
+  padding: 1em;
+}
+
+#main-nav {
+
+  transition: all 0.4s;
+  background-color: #fff;
+  max-height: 0;
+}
+#main-nav.active {
+  max-height: 5000px;
+}
+#main-nav ul{
+  margin-left: 0; 
+  padding-left: 0;
+}
+
+#GN-local-nav-body-source {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .container{
+    max-width: 980px;
+    width: 980px;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-nav{
+    display:none;
+  }
+
+  nav#GN-sub-nav div.mainnav {
+   display: block;
+  }
+
+  #GN-local-nav a:hover{
+    text-decoration: underline;
+  }
+  #GN-local-nav #nav-toggle {
+    display: inline-block;
+  }
+  #GN-local-nav .sub-nav {
+    display: none;
+    top: 0;
+    position: relative;
+    max-height: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: 0;
+    box-shadow: none;
+  }
+
+  #GN-local-nav .sub-nav ul {
+    display: block;
+  }
+  #GN-local-nav .sub-nav-title{
+    margin-left: 30px;
+  }
+  #GN-local-nav .sub-nav li{
+    margin-left: 30px;
+    line-height: 12px;
+    padding: 2px 7px;
+  }
+  #GN-local-nav .sub-nav li a{
+    padding: 3px 0 !important;
+    font-size: 14px;
+  }
+  #GN-local-nav .sub-nav-category{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    line-height: 1;
+    vertical-align: baseline;
+    border-bottom: 2px solid #660000;
+    margin-bottom: 20px;
+  }
+
+  #GN-local-nav #nav-toggle {
+    display: inline-block;
+  }
+
+  #GN-local-nav {
+    width: 264px;
+    background-color: #b51111;
+    max-height: 0;
+    padding-bottom: 10px;
+   /* overflow: hidden;*/
+  }
+  #GN-local-nav .nav-menu{
+    left:0;
+    margin-top:0;
+    background-color: #b51111;
+    width: 264px;
+    padding-bottom: 10px;
+  }
+  #GN-local-nav .nav-item a{
+    position: relative;
+    display: inline-block;
+    /*width: calc(100% - 2em);*/
+    padding: .5em 1em;
+    margin: 0 0 -1px;
+    border: 1px solid transparent;
+    background-color: #b51111;
+    color:#fff;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Raleway, arial, sans-serif;
+    letter-spacing: 2px;
+    padding: 10px 0px 10px 5px !important;
+  }
+
+  #GN-local-nav .nav-item .icon, #GN-local-nav #nav-toggle {
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    float: right;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  #GN-local-nav .nav-item {
+    display: block;
+  }
+
+  #GN-local-nav .nav-item > a {
+    display: inline-block;
+  }
+  .masthead .mainnav{
+    display: none;
+  }
+}
+
+/* to be used for elements that should only be available to screen readers */
+.gal-hidden
+{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+#GN-local-nav-source {
+  display: none;
+}

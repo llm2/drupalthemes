@@ -68,12 +68,16 @@
   <![endif]-->
   <?php print $scripts; ?>
  <!-- JS FOR GLOBAL NAV -->
-    <link rel="stylesheet" href="//s3.amazonaws.com/nyu.edu/globalnav/global-nav.css">
-    <script src="//s3.amazonaws.com/nyu.edu/globalnav/global-nav.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function(event) {
+ <link rel="stylesheet" href="//globalnav.digicomm.home.nyu.edu/v2.1.0/global-nav.css">
+ <link rel="icon" href="/common/images/favicon.ico" type="image/x-icon" /> 
+
+<script src="//globalnav.digicomm.home.nyu.edu/v2.1.0/global-nav.js"></script>
+        <script type="text/javascript">globalNavObject || document.write("<script type='text/javascript' src='//www.nyu.edu/globalnav/v2.1.0/global-nav.js'>\x3C/script>")</script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function(event) {
           globalNavObject.init({
-            logoPathDesktop: '//s3.amazonaws.com/nyu.edu/logos/gallatin.svg',
+            homepage: '//gallatin.nyu.edu',
+            logoPathDesktop: '///s3.amazonaws.com/nyu.edu/logos/gallatin.svg',
             logoPathMobile: '//s3.amazonaws.com/nyu.edu/logos/gallatin-small.svg',
             logoAlt: 'NYU Gallatin School of Individualized Study',
             searchDomain: '//gallatin.nyu.edu/utilities/search.html',
@@ -83,20 +87,24 @@
             searchEnabled: true,
             breakPoints: {
               desktop: 992,
-              tablet: 480,
-              phone: 290
+              tablet: 768,
+              phone: 480
             },
-            isResponsive: true
+            isResponsive: true,
+            el: 'GN-container'
+            // isFullWidth: false,
+            // localNavFunc: "toggleSchoolNav",
+              // showLocalNavAlways: true
           });
-      });
-    </script>
+        });
+      </script>
 </head>
 <body<?php print $body_attributes; ?>>
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  </div>
-<a class="bypass-block" href="#GN-global-nav-title" role="complementary" tabindex="1" aria-label="skip to NYU navigation">Skip to All NYU Navigation</a>
-            <a class="bypass-block" href="#skipToContent" role="complementary" tabIndex="2" aria-label="skip to main">Skip to Main Content</a>
+
+<a class="bypass-block" href="#main-nav" tabIndex="0" aria-label="Skip to Gallatin Navigation">Skip to Gallatin Navigation</a>
+<a class="bypass-block" href="#skipToContent" tabIndex="0" aria-label="Skip to Gallatin Main Content">Skip to Gallatin Main Content</a>
+<div id="GN-container"></div>
+
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
