@@ -55,6 +55,12 @@ fieldset{
 width: 100%;
 }
 
+
+.webform-component input.error, .webform-component select.error, .webform-component textarea.error  {
+  background-color: pink;
+}
+
+
 .webform-component{
  width: 50%;
  padding-left: 10px;
@@ -3459,6 +3465,9 @@ section.col-sm-9 {
 	font-family: "Playfair Display", handwriting;
 	font-size:28px;
 }
+.webform-client-form input:invalid .webform-client-form input.error{
+	background-color: pink;
+}
 
 /* --------------------------- FORMS DB ------------------------------------ */
 
@@ -3708,6 +3717,7 @@ iframe{
   padding: 10px;
   
 }
+
 
 /*********************** IMAGE CAPTION **********************************/
 .caption{
@@ -5822,4 +5832,131 @@ table.standard tr td, th{
 }
 table a{
   text-decoration: underline;
+}
+
+
+/* BB UPDATES ############################*/
+
+ul.nav li.dropdown {
+  z-index: 3;
+}
+
+ul.nav ul.dropdown-menu {
+  -webkit-box-shadow: 0px 2px 8px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 2px 8px 5px rgba(0,0,0,0.4);
+  box-shadow: 0px 2px 8px 5px rgba(0,0,0,0.4);
+  z-index: -1;
+}
+
+ul.nav ul.dropdown-menu,
+ul.nav ul.dropdown-menu li .yamm-content {
+  padding-top:0;
+  padding-bottom:0;
+}
+
+ul.nav ul.dropdown-menu li .yamm-content .row {
+  border-right: 2px solid #660000;
+  margin-right: 0px;
+}
+ul.nav ul.dropdown-menu li .yamm-content>div:last-child .row {
+  border-right: 0;
+}
+
+ul.nav ul.dropdown-menu li .yamm-content .row .panel-default {
+  margin-top: 20px;
+}
+
+ul.nav ul.dropdown-menu li .yamm-content .row .panel-heading h3 {
+  font-weight: 700;
+}
+
+/*ul.nav ul.dropdown-menu li .yamm-content .row .panel-heading a {
+  font-family: "Playfair", serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+ul.nav ul.dropdown-menu li .yamm-content .row .panel-heading a:hover {
+  font-weight: 700;
+  text-decoration: none;
+}*/
+
+@media screen and (max-width: 979px) {
+
+.navbar-nav .open .dropdown-menu{
+  position: static;
+  float: none;
+  width: auto;
+}
+
+ul.nav ul.dropdown-menu {
+  box-shadow: 0;
+}
+
+  ul.nav li.dropdown {
+    z-index: auto;
+  }
+
+  ul.nav ul.dropdown-menu {
+    z-index: auto;
+  }
+
+
+  /* Color inversion overrides */
+  #GN-sub-nav #GN-local-nav,
+  #GN-local-nav .dropdown-menu,
+  #GN-local-nav .nav>li>a:hover,
+  #GN-local-nav .nav .dropdown > a,
+  #GN-local-nav .nav .open>a,
+  #GN-local-nav #accordion > div > div > h4,
+  #GN-local-nav .panel-heading h3,
+  #GN-local-nav .navbar-nav {
+    background-color: #b51111;
+    color: #fff;
+  }
+
+
+  #GN-local-nav {
+    height: -moz-calc(100%);
+    height: -webkit-calc(100%);
+    height: calc(100%);
+    height: 100%;
+  }
+
+  /* Previous !important overrides */
+  #GN-local-nav .navbar-nav {
+    margin-top: 0px !important;
+    padding: 0px !important;
+  }
+
+  #GN-local-nav #accordion > div > div > h4 {
+    padding: 3px 0 !important;
+  }
+
+  #GN-local-nav .dropdown-menu .yamm-content > div:not(:first-child) {
+    border-top: 1px solid #333;
+  }
+
+  #GN-local-nav .dropdown-menu .yamm-content .row {
+    margin-left: 30px;
+  }
+
+  #GN-local-nav div#accordion {
+    padding: 15px 0 !important;
+  }
+
+
+  /* Font updates */
+  #GN-local-nav .dropdown .dropdown-toggle {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Raleway, arial, sans-serif;
+    letter-spacing: 2px;
+    padding: 10px 0px 10px 5px !important;
+  }
+
+  #GN-local-nav .dropdown.open .dropdown-toggle {
+    font-weight: 800;
+    margin-left: 15px;
+  }
 }

@@ -4,5 +4,7 @@ core = 7.x
 base theme = bootstrap 
 stylesheets[all][] = style.css
 stylesheets[all][] = css/nav.css
+scripts[] = js/jquery-accessibleMegaMenu.js
+scripts[] = js/datepicker.min.js
 settings[toggle_main_menu] = 0
 settings[toggle_secondary_menu] = 0

@@ -66,11 +66,11 @@
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+
   <?php print $scripts; ?>
  <!-- JS FOR GLOBAL NAV -->
  <link rel="stylesheet" href="//globalnav.digicomm.home.nyu.edu/v2.1.0/global-nav.css">
  <link rel="icon" href="/common/images/favicon.ico" type="image/x-icon" /> 
-
 <script src="//globalnav.digicomm.home.nyu.edu/v2.1.0/global-nav.js"></script>
         <script type="text/javascript">globalNavObject || document.write("<script type='text/javascript' src='//www.nyu.edu/globalnav/v2.1.0/global-nav.js'>\x3C/script>")</script>
         <script>
@@ -100,13 +100,78 @@
       </script>
 </head>
 <body<?php print $body_attributes; ?>>
-
-<a class="bypass-block" href="#main-nav" tabIndex="0" aria-label="Skip to Gallatin Navigation">Skip to Gallatin Navigation</a>
-<a class="bypass-block" href="#skipToContent" tabIndex="0" aria-label="Skip to Gallatin Main Content">Skip to Gallatin Main Content</a>
-<div id="GN-container"></div>
+<aside>
+  <a class="bypass-block" href="#main-nav" tabIndex="0" aria-label="Skip to Gallatin Navigation">Skip to Gallatin Navigation</a>
+  <a class="bypass-block" href="#skipToContent" tabIndex="0" aria-label="Skip to Gallatin Main Content">Skip to Gallatin Main Content</a>
+</aside>
+  <div id="GN-container"></div>
 
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+
+<script>
+/* requires jQuery */
+
+(function ($) {
+
+'use strict';
+        $(document).ready(function () {
+            // initialize the megamenu
+            $('.megamenu').accessibleMegaMenu();
+
+            // hack so that the megamenu doesn't show flash of css animation after the page loads.
+            setTimeout(function () {
+                $('body').removeClass('init');
+            }, 500);
+        });
+
+
+
+        $("nav:first").accessibleMegaMenu({
+
+            /* Button that toggles navigation at mobile */
+            navToggle: '#GN-toggle-left-nav',
+
+            /* Id of navigation */
+            navId: '#main-nav',
+
+            /* mobile breakpoint in pixels that determines when the menu goes to mobile */
+            mobileBreakpoint: '480',
+            /* prefix for generated unique id attributes, which are required
+               to indicate aria-owns, aria-controls and aria-labelledby */
+            uuidPrefix: 'accessible-megamenu',
+
+            /* css class used to define the megamenu styling */
+            menuClass: 'nav-menu',
+
+            /* css class for a top-level navigation item in the megamenu */
+            topNavItemClass: 'nav-item',
+
+            /* css class for a top-level icon in the megamenu (displayed at mobile) */
+            topNavIconClass: '.icon',
+
+            /* css class for a megamenu panel */
+            panelClass: 'sub-nav',
+
+            /* css class for a group of items within a megamenu panel */
+            panelGroupClass: 'sub-nav-group',
+
+            /* css class for the hover state */
+            hoverClass: 'hover',
+
+            /* css class for the focus state */
+            focusClass: 'focus',
+
+            /* css class for the open state */
+            openClass: 'open'
+        });
+
+
+
+})(jQuery);
+
+</script>
+
 </body>
 </html>

@@ -125,6 +125,7 @@ if($logged_in){
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
+  <main>
   <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>
@@ -155,7 +156,8 @@ if($logged_in){
 							<a href="http://gallatin.nyu.edu/en/utilities/forms.html">Forms Library</a> 				
 					/											
 							<?php print $title; ?>	   
-</div></div>	
+</div>
+</div>	
 <?php endif; ?>
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
@@ -167,7 +169,7 @@ if($logged_in){
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-	<div id="skipToContent" role="main">
+	<div id="skipToContent">
       <?php print render($page['content']); ?>
 	</div>
     </div>
@@ -180,6 +182,7 @@ if($logged_in){
 
   </section>
 </div>
+</main>
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">
     <?php print render($page['footer']); ?>
