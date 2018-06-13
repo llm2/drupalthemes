@@ -151,6 +151,10 @@ textarea.large {
 .table-responsive{
      overflow-x: visible
 }
+
+.field-type-text-with-summary{
+	padding-bottom: 20px;
+}
 /* CUSTOM CHECKBOX STYLES
  ---------------------------------------------------------------*/
 
