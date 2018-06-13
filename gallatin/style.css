@@ -23,7 +23,29 @@ DEVELOPER MIXINS
 /*#####################################################################################
 FORM STYLES
 #######################################################################################*/
+a:focus, input:focus, .form-control:focus, button:focus{
+  /*outline: none !important;*/
+  -webkit-box-shadow: inset 0 0 0 3px #e7e469;
+  box-shadow: inset 0 0 0 3px #e7e469;
+      color: inherit;
+}
+/*
+input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
 
+a:focus, input:focus, .form-control:focus {
+    outline: 1px solid red;
+}
+.form-radio:focus > .form-type-radio {
+  background-color: pink;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid;
+}
+*/
 .webform-component input[type="text"],
 .webform-component input[type="email"],
 .webform-component input[type="tel"],
@@ -281,7 +303,7 @@ h3 {
   font-size: 20px;
   padding-bottom: 12px;
 }
-
+/*
 a,
 a:link,
 a:hover,
@@ -290,7 +312,7 @@ a:visited,
 a:focus {
   outline: none;
 }
-
+*/
 a,
 a:hover {
   color: inherit;
@@ -703,6 +725,7 @@ header .masthead .masthead-slideshow .masthead-slideshow-navigation li.selected 
   background: #fff;
 }
 
+
 header .main-nav {
   position: absolute;
   width: 100%;
@@ -1058,6 +1081,7 @@ h4 a[aria-expanded="true"] {
     margin: 0;
     padding: 0;
   }
+ 
   .comfort-nav {
     position: relative;
   }
@@ -1097,6 +1121,7 @@ h4 a[aria-expanded="true"] {
   .navbar-fixed-top {
     position: relative;
   }
+
   header .masthead .masthead-slideshow .masthead-slide .masthead-slide-text {
     width: 80%;
     top: auto;
@@ -2684,6 +2709,9 @@ background-color: #b51111;}
   margin-top: 20px
 }
 
+#block-system-main{
+	padding:0;
+}
 
 #widesearchform input[type="text"],
 #widesearchform input[type="email"],
@@ -3599,78 +3627,7 @@ iframe{
 
 /* Re-enable Global Nav */
 @media screen and (max-width: 979px) {
-  #GN-local-nav .navbar-nav {
-    float: left;
-    margin: 0 !important;
-  }
-
-  #GN-toggle-left-nav{
-    display: inline-block;
-  }
-
-  #GN-sub-nav ul .open>a:hover{
-    border-color: #b51111;
-    color: #FFF;
-    background-color: #b51111;
-  }
-
-  #GN-local-nav .dropdown-menu{
-    background-color: #FFF;
-  }
-
-  #GN-local-nav .dropdown-toggle:focus{
-    outline: 0;
-    color: #b51111;
-  }
-
-  #GN-local-nav .navbar-nav{
-    width: 100%;
-    list-style: none;
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #b51111;
-    padding: 15px 0 !important;
-    background-color: #FFF;
-  }
-
-  #GN-local-nav .navbar-nav>li{
-    float: none;
-  }
-
-  #GN-local-nav .navbar-nav>li>a {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    line-height: 20px !important;
-  }
-
-  #GN-local-nav .nav>li>a {
-    position: relative;
-    display: block;
-    padding: 10px 15px !important;
-  }
-
-  #GN-local-nav .nav>li>a:focus, .nav>li>a:hover{
-    border-color: #b51111;
-  }
-
-  #GN-local-nav div#accordion {
-    padding: 15px !important;
-  }
-
-  #GN-local-nav #accordion > div > div > h4 {
-    padding: 10px 0 !important;
-    color: #b51111;
-  }
-
-  #GN-local-nav .panel-heading h3{
-    color: #b51111;
-    font-weight: 700;
-  }
-
-  #GN-search-text-field-container input{
-    color: #000;
-  }
+ 
 }
 
 /* Global Nav z-index Fix */
@@ -3706,21 +3663,7 @@ iframe{
   border: 1px solid rgba(0,0,0,0.15);
 }
 
-/******************* FORM VERIFICATION MESSAGES *********************/
-.glow-errorMsg{
 
-  display: block;
-  background-color: #FF0;
-  padding: 10px;
-
-}
-.glow-errorSummary{
-
-  display: block;
-  background-color: #FF0;
-  padding: 10px;
-  
-}
 
 
 /*********************** IMAGE CAPTION **********************************/
@@ -5305,11 +5248,11 @@ h2.events-heading {
 .event-rsvp-page .gallatinRichText{
   padding-left: 0px;
 }
-button:focus, button.btn:focus, button.btn-primary:focus, button.btn-wrapper:focus,
+/*button:focus, button.btn:focus, button.btn-primary:focus, button.btn-wrapper:focus,
 button.btn-primary:active:focus {
     outline: none;
 }
-
+*/
 /** RSVP Form **/
 #event-rsvp .event-rsvp-form {
   display: none;
