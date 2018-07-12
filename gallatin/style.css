@@ -2710,7 +2710,7 @@ background-color: #b51111;}
 }
 
 #block-system-main{
-	padding:0;
+	padding-top: 30px;
 }
 
 #widesearchform input[type="text"],
