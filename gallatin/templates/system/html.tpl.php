@@ -102,12 +102,19 @@
       </script>
 
       <?php } ?>
+
+<style>
+[class^="GN-"] :focus, [id^="GN-"] :focus {
+    outline: none;
+    box-shadow: inset 0 0 0 3px #e7e469;
+}
+</style>
 </head>
 <body<?php print $body_attributes; ?>>
-<aside>
+<div role="complimentary">
   <a class="bypass-block" href="#main-nav" tabIndex="0" aria-label="Skip to Gallatin Navigation">Skip to Gallatin Navigation</a>
   <a class="bypass-block" href="#skipToContent" tabIndex="0" aria-label="Skip to Gallatin Main Content">Skip to Gallatin Main Content</a>
-</aside>
+</div>
   <div id="GN-container"></div>
 
   <?php print $page_top; ?>
