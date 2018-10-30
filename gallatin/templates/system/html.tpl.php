@@ -122,12 +122,35 @@
   <?php print $page_bottom; ?>
 
 <?php if(!user_is_logged_in()){ ?>
+
 <script>
+(function ($) {
+
+    $(document).ready(function(){
+        $("#subnav-mobile").html($("#subnav").html());
+        $("div#subnav-mobile .trigger").click(function(){
+            if ($("div#subnav-mobile ul").hasClass("expanded")) {
+                $("div#subnav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                $(this).removeClass("open");
+            } else {
+                $("div#subnav-mobile ul").addClass("expanded").slideDown(250);
+                $(this).addClass("open");
+            }
+        });
+    });
+
+})(jQuery);
+</script>
+
+<script>
+
 /* requires jQuery */
 
 (function ($) {
 
 'use strict';
+
+
         $(document).ready(function () {
             // initialize the megamenu
             $('.megamenu').accessibleMegaMenu();
