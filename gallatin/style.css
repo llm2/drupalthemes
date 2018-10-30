@@ -3402,6 +3402,7 @@ input[type="button"], input[type="submit"] {
 /* replicate columns with old markup for forms */
 
 .webform-client-form.halfSize, 
+.webform-client-form.threeQuarterSize, 
 .webform-client-form.quarterSize, 
 .webform-client-form.eighthSize, 
 .webform-client-form.options, 
@@ -3417,6 +3418,12 @@ input[type="button"], input[type="submit"] {
 .webform-component-markup{
   width: 100%;
   padding-left: 10px;
+  padding-right: 10px;
+  float:left;
+}
+.webform-client-form .threeQuarterSize{
+	  width: 75%;
+      padding-left: 10px;
   padding-right: 10px;
   float:left;
 }
