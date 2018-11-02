@@ -44,6 +44,6 @@
 ?>
 <section>
 <p><strong>
-For people in the EU, see <a href="http://www.nyu.edu/it/gdpr">information on your privacy rights under GDPR</a>.
+For people in the EU, see <a href="http://www.nyu.edu/it/gdpr" target="_blank">information on your privacy rights under GDPR</a>.
 </strong></p>
 </section>
