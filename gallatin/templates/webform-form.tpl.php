@@ -42,3 +42,8 @@
   // form that haven't yet been rendered above (buttons, hidden elements, etc).
   print drupal_render_children($form);
 ?>
+<section>
+<p><strong>
+For people in the EU, see <a href="http://www.nyu.edu/it/gdpr">information on your privacy rights under GDPR</a>.
+</strong></p>
+</section>
