@@ -1,9 +1,8 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-</head>
-<body id="mimemail-body" style="">
 
 <style>
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display);
@@ -32,9 +31,6 @@ h6 {
      float:left;
    clear:left;
 }
-/*#####################################################################################
-MAIN CONTENT STYLES - STRUCTURE
-#######################################################################################*/
 
 section {
   padding: 50px 0;
@@ -71,20 +67,10 @@ section.red {
 a, a:hover {
     color: inherit;
 }
-/*
-#one-col{
-  position: relative;
-  top:-50; left:0;
-}
-*/
-/* 
-  Generic Styling, for Desktops/Laptops 
-  */
   table.standard { 
     width: 100%; 
     border-collapse: collapse; 
   }
-  /* Zebra striping */
   table.standard tr:nth-of-type(odd) { 
     background: #eee; 
   }
@@ -129,12 +115,10 @@ div .fullSize{
     #header-image{
       display: none;
     }
-    /* Force table to not be like tables anymore */
     table.standard, table.standard thead, table.standard tbody, table.standard th, table.standard td, table.standard tr {
       display: block;
     }
 
-    /* Hide table headers (but not display: none;, for accessibility) */
     table.standard thead tr {
       position: absolute;
       top: -9999px;
@@ -145,17 +129,13 @@ div .fullSize{
     table.standard tr { border: 1px solid #ccc; }
 
     table.standard td {
-      /* Behave  like a "row" */
       border: none;
       border-bottom: 1px solid #eee;
       position: relative;
-      /*padding-left: 50%;*/
     }
 
     table.standard td:before {
-      /* Now like a table header */
       position: absolute;
-      /* Top/left values mimic padding */
       top: 6px;
       left: 6px;
       width: 45%;
@@ -165,7 +145,6 @@ div .fullSize{
 
   }
 
-  /* Smartphones (portrait and landscape) ----------- */
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     body {
@@ -178,7 +157,6 @@ div .fullSize{
     }
 
   }
-  /* iPads (portrait and landscape) ----------- */
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     body, #logo {
       width: 495px;
@@ -191,7 +169,7 @@ div .fullSize{
 </style>
 
 </head>
-<body style="color: #333;
+<body id="mimemail-body" style="color: #333;
     font-family: "Raleway", arial, sans-serif;
     font-size: 14px;
     padding: 0;
@@ -209,6 +187,3 @@ div .fullSize{
 <div class="main">
   <center>
 <table id="one-col" style="background-color:#FFF; max-width: 95%" cellpadding="30px;"><tbody><tr><td >
-
-
-<!-- BEGIN EMAIL CONTENT -->
