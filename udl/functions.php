@@ -315,13 +315,12 @@ function udl_custom_post_types() {
 				echo $before . $terms_output . $after;
 			}
 		}
-
+/*
 		function my_acf_google_map_api(){
-			/*acf_update_setting('google_api_key','AIzaSyADGbG0AvBaI0UCzgLoe26AjaqP2lNJY40');*/
-			acf_update_setting('google_api_key','AIzaSyCPakzl_ukgJuuX57EqNggNZfJT2IT7p0A');
+			acf_update_setting('google_api_key','key_here');
 		}
 		add_action('acf/init', 'my_acf_google_map_api');
-
+*/
 
 
 		function wrap_embed_with_div($html, $url, $attr) {
