@@ -1,0 +1,66 @@
+{
+    "key": "group_5a29cbd8ce18a",
+    "title": "Other",
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "category"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1524758535,
+    "fields": [
+        {
+            "key": "field_5a29cbe3da7cf",
+            "label": "Image",
+            "name": "initiative_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5ac53d8e0b250",
+            "label": "List of Stewards",
+            "name": "stewards",
+            "type": "user",
+            "instructions": "Select from the list of user in order to display all the stewards. If you don't see a user in the list you'll need to create the user to add them to the list of Stewards",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "role": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "array"
+        }
+    ]
+}

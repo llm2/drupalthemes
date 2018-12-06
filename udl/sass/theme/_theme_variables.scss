@@ -1,0 +1,107 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+
+$primary: #57068c; // Thats a sample how you could change a BootStrap variable.
+$black:   #000000;
+$white:   #ffffff;
+$gray:    #cccccc;
+$gray-900: #000000 !default;
+$dark:          $black !default;
+
+// stylelint-disable value-keyword-case
+$font-family-serif:           Georgia, Times, serif;
+$font-family-sans-serif:      "Practice-Regular",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:       "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-serif, serif;
+// stylelint-enable value-keyword-case
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+
+$h1-font-size:                $font-size-base * 3.5 !default;
+$h2-font-size:                $font-size-base * 2.5 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+// $headings-margin-bottom:      ($spacer / 2) !default;
+$headings-font-family:        "Practice-Bold",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$headings-font-weight:        normal;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit;
+
+$display1-size:               6rem !default;
+$display2-size:               5.5rem !default;
+$display3-size:               4.5rem !default;
+$display4-size:               3.5rem !default;
+
+$display1-weight:             300 !default;
+$display2-weight:             300 !default;
+$display3-weight:             300 !default;
+$display4-weight:             300 !default;
+$display-line-height:         $headings-line-height !default;
+
+$lead-font-size:              ($font-size-base * 1.25) !default;
+$lead-font-weight:            300 !default;
+
+$small-font-size:             80% !default;
+
+
+//custom margin
+
+$margin-xlarge-vertical:      40px;
+
+
+//padding
+
+$padding-base-vertical:       6px;
+$padding-base-horizontal:     12px;
+
+$padding-large-vertical:      10px;
+$padding-large-horizontal:    16px;
+
+
+//custom padding
+$padding-xlarge-vertical:     28px;
+
+$padding-small-vertical:      5px;
+$padding-small-horizontal:    10px;
+
+$padding-xs-vertical:         1px;
+$padding-xs-horizontal:       5px;
+
+
+//Line-height
+
+$line-height-large:           1.33;
+$line-height-small:           1.5;
+
+
+//border-radius
+$border-radius-base:          4px;
+$border-radius-large:         6px;
+$border-radius-small:         3px;
+
+
+//borders
+$border-rg:                   3px solid $black;
+$border-primary:              3px solid $primary;
+$border-thin:                 3px solid $black;
+$border-light:                3px solid $white;
+$border-gray:                 3px solid #eee;
+
+
+//boxes
+$box-sm:                      3px solid $black;
+$box-sm-white:                3px solid $white;
+$box-sm-black:                3px solid $black;
